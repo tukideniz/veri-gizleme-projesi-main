@@ -1,0 +1,196 @@
+/* Genel Sayfa Stilleri */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-main {
+  flex-grow: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+/* Header ve Footer Stilleri */
+.app-header {
+  background: linear-gradient(45deg, #2c3e50, #34495e);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.app-header p {
+  margin: 0.5rem 0 0;
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+.app-footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #e9ecef;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+/* Card Stili */
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.section-title.text-center {
+  text-align: center;
+  border-bottom: none;
+}
+
+/* Form Stilleri */
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select {
+  padding: 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.form-actions {
+  margin-top: 1.5rem;
+}
+
+.button-primary {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button-primary:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+.button-primary:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #e74c3c;
+  background-color: #fbeae5;
+  border: 1px solid #e74c3c;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 1.5rem;
+}
+
+/* Sonuçlar Bölümü Stilleri */
+.results-section {
+  padding-top: 2rem;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.image-card {
+  padding: 1rem;
+  text-align: center;
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  border: 1px solid #eee;
+}
+
+.image-card h3 {
+  font-size: 1.1rem;
+  color: #34495e;
+  margin: 0;
+}
+
+.metrics-card {
+  margin-top: 2rem;
+}
+
+.metrics-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.metric-group h4 {
+  font-size: 1.2rem;
+  color: #34495e;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.metric-group p {
+  margin: 0.25rem 0;
+}
