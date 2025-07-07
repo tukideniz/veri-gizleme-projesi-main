@@ -58,7 +58,7 @@ function App() {
     <div className="app-container">
       <header className="app-header">
         <h1>Görüntü Steganografi Uygulaması</h1>
-        <p>Sadece React ve CSS ile Modern Arayüz</p>
+        <p>Rukiye Deniz Yelken</p>
       </header>
 
       <main className="app-main">

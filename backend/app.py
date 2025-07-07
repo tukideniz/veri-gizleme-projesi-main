@@ -10,7 +10,7 @@ import os # os kütüphanesi eklendi
 # --- DEĞİŞİKLİK 1: Flask uygulamasını 'build' klasörünü tanıyacak şekilde başlat ---
 # Flask'a diyoruz ki, statik dosyaları (React'in CSS ve JS dosyaları) 
 # ../frontend/build/static klasöründen sun.
-app = Flask(__name__, static_folder='../frontend/build', static_url_path='/')
+app = Flask(__name__, static_folder='frontend/build', static_url_path='/')
 
 # Geliştirme sırasında CORS hala gerekli olabilir, o yüzden kalmasında sakınca yok.
 CORS(app)
