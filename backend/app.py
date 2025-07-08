@@ -55,7 +55,7 @@ def perform_lsb_multi_bit(cover_img, secret_img, bits_to_hide):
 
     psnr_val = psnr(cover_img, stego_img, data_range=255)
     ssim_val = ssim(cv2.cvtColor(cover_img, cv2.COLOR_BGR2GRAY), cv2.cvtColor(stego_img, cv2.COLOR_BGR2GRAY), data_range=255)
-    # Kurtarma metriklerini, orijinal (ölçeklenmemiş) çıkarılan veriyle hesaplamak daha doğrudur
+    
     recovery_psnr_val = psnr(secret_resized, extracted_bits.astype(np.uint8), data_range=255)
     recovery_ssim_val = ssim(secret_resized, extracted_bits.astype(np.uint8), data_range=255)
     
