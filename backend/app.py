@@ -5,7 +5,7 @@ import numpy as np
 from skimage.metrics import peak_signal_noise_ratio as psnr, structural_similarity as ssim
 import base64
 import io
-import osdocker ps
+import os
 
 # Docker ve yerel ortamda uyumlu çalışacak dinamik yol tanımı
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
