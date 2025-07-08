@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Steganografi Projesi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bu proje, bir kapak görselinin içine gizli bir görselin farklı yöntemlerle saklanmasını sağlayan bir web uygulamasıdır. Proje, Python/Flask backend'i ve React frontend'inden oluşur ve Docker ile konteynerize edilmiştir.
 
-## Available Scripts
+## Gereksinimler
 
-In the project directory, you can run:
+Bu projeyi çalıştırabilmek için bilgisayarınızda olması gereken:
 
-### `npm start`
+* **Docker Desktop**: [Resmi sitesinden](https://www.docker.com/products/docker-desktop/) işletim sisteminize uygun versiyonu indirip kurun.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Başka hiçbir Python, Node.js veya kütüphane kurulumuna ihtiyacınız yoktur. Tüm gereksinimler Docker konteynerinin içinde mevcuttur.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Nasıl Çalıştırılır?
 
-### `npm test`
+1.  Projeyi bilgisayarınıza indirin ve `.zip` dosyasından çıkarın.
+2.  Bilgisayarınızda **Docker Desktop** programının çalıştığından ve stabil olduğundan emin olun (genellikle 1-2 dakika sürer).
+3.  İşletim sisteminize göre aşağıdaki adımları izleyin:
+    * **Windows'ta:** Proje klasörünün içindeki `start.bat` dosyasına çift tıklayın.
+    * **MacOS veya Linux'ta:** Terminali proje klasörünün içinde açın ve `./start.sh` komutunu çalıştırın.//henuz eklenmedi
+4.  Script, imajları oluşturup konteynerleri başlatacaktır. Bu işlem ilk seferde birkaç dakika sürebilir.
+5.  Script "Proje basariyla baslatildi!" mesajını verdiğinde, bir web tarayıcısı açın ve **`http://localhost:5000`** adresine gidin.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Uygulama artık kullanıma hazırdır.
 
-### `npm run build`
+## Nasıl Durdurulur?
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Uygulamayı tamamen durdurmak ve arka plandaki konteynerleri kaldırmak için:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* **Windows'ta:** `stop.bat` dosyasına çift tıklayın.
+* **MacOS veya Linux'ta:** Terminalde `./stop.sh` komutunu çalıştırın.
